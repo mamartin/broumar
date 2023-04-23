@@ -3,27 +3,34 @@
 <head>
 	<title>Broumar - Logistika</title>
 	<!-- tady můžete přidat další meta informace, CSS styly, JavaScript atd. -->
+	<link rel="stylesheet" href="styles.css">
 
 </head>
-<body style="font-family: Arial, sans-serif; background-color: #f2f2f2;">
-	<header style="display: flex; justify-content: space-between; align-items: center; padding: 10px;">
-		<img src="logo.png" alt="Logo Broumar" style="height: 50px;">
-		<nav style="display: flex;">
+<body style="font-family: Arial, sans-serif">
+	<header style="display: flex; justify-content: center; align-items: center; padding: 10px;">
+		<img src="images/logo.png" alt="Logo Broumar" id="logo">
+		<!-- <nav style="display: flex;">
 			<a href="#" style="text-decoration: none; color: black; padding: 10px;">Domů</a>
 			<a href="#" style="text-decoration: none; color: black; padding: 10px;">O nás</a>
 			<a href="#" style="text-decoration: none; color: black; padding: 10px;">Kontakt</a>
-		</nav>
+		</nav> -->
 	</header>
-	<main style="max-width: 800px; margin: 0 auto; padding: 20px;">
-		<section style="margin-bottom: 40px;">
-			<div class="mySlides">
-				<img src="foto1.jpg" alt="Fotka 1" style="width: 100%;">
-				<h2 style="margin-top: 20px; margin-bottom: 10px; font-size: 24px;">Titulek 1</h2>
+	<main id="main">
+		<section id="slides">
+			<div class="mySlides" id="photo1">
+				<h2>Titulek 1</h2>
 				<p style="font-size: 16px;">Text 1</p>
 			</div>
-			<div class="mySlides">
-				<img src="foto2.jpg" alt="Fotka 2" style="width: 100%;">
-				<h2 style="margin-top: 20px; margin-bottom: 10px; font-size: 24px;">Titulek 2</h2>
+			<div class="mySlides" id="photo2">
+				<h2>Titulek 2</h2>
+				<p style="font-size: 16px;">Text 2</p>
+			</div>
+			<div class="mySlides" id="photo3">
+				<h2>Titulek 2</h2>
+				<p style="font-size: 16px;">Text 2</p>
+			</div>
+			<div class="mySlides" id="photo4">
+				<h2>Titulek 2</h2>
 				<p style="font-size: 16px;">Text 2</p>
 			</div>
         </section>
@@ -40,11 +47,11 @@
 			let i;
 			let slides = document.getElementsByClassName("mySlides");
 			for (i = 0; i < slides.length; i++) {
-				slides[i].style.display = "none";
+				slides[i].style.opacity = 0;
 			}
 			slideIndex++;
 			if (slideIndex > slides.length) {slideIndex = 1}
-			slides[slideIndex-1].style.display = "block";
+			slides[slideIndex-1].style.opacity = 1;
 			setTimeout(showSlides, 5000); // změňte tuto hodnotu, pokud chcete změnit interval rotace
 		}
 	</script>
