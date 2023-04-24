@@ -1,10 +1,20 @@
+#main {
+    display: flex;
+    flex-direction: column;
+}
 #logo {
     height: 150px
+}
+
+main {
+    /* border: 1px solid black; */
 }
 
 #slides {
     /* border: 1px solid black; */
     height: 400px;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .mySlides {
@@ -19,14 +29,16 @@
 }
 
 .mySlides h2 {
+    margin-top: 160px;
     color: white;
-    font-size: 50px;
+    font-size: 70px;
+    text-align: center;
 }
 
-.mySlides p {
+/* .mySlides p {
     color: white;
     font-size: 30px;
-}
+} */
 
 #photo1 {
     background-image: url("images/1.jpg");
@@ -42,4 +54,9 @@
 
 #photo4 {
     background-image: url("images/4.jpg");
+}
+
+
+#textContent {
+    width: 80%;
 }
