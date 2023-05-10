@@ -97,3 +97,20 @@ main {
 #textContent > h2 {
     font-size: 40px;
 }
+
+.sluzby {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.sluzby-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sluzby-item > img {
+    width: 100px;
+    height: 100px;
+}
