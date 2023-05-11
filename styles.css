@@ -20,7 +20,7 @@ header {
 }
 
 h2 {
-    color: #3a3a3a;
+    color: #1b00de;
 }
 
 #main {
@@ -47,6 +47,14 @@ main {
     /* margin: 0 auto; */
 }
 
+.overlay {
+    position: absolute;
+    width: 80%;
+    height: 400px;
+    background-color: black;
+    opacity: 0.2;
+}
+
 .mySlides {
     position: absolute;
     width: 80%;
@@ -59,10 +67,12 @@ main {
 }
 
 .mySlides h2 {
+    position: relative;
     margin-top: 160px;
     color: white;
     font-size: 70px;
     text-align: center;
+    z-index: 2;
 }
 
 /* .mySlides p {
@@ -85,6 +95,10 @@ main {
 #photo4 {
     background-image: url("images/4.jpg");
 }
+
+/* #photo5 {
+    background-image: url("images/5.jpg");
+} */
 
 #hexa {
     margin-top: 20px;
