@@ -123,7 +123,23 @@
 			</p>
         
             <h2 id="poptavka">Poptávka</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non ante euismod, hendrerit augue non, bibendum velit. Praesent in nisl faucibus, interdum quam vel, posuere magna. Duis sollicitudin turpis ac sem malesuada tincidunt.</p>
+            <form>
+				<label for="fname">Jméno:</label><br>
+				<input type="text" id="fname" name="fname" placeholder="Jan Novák"><br><br>
+
+				<label for="email">E-mail:</label><br>
+				<input type="email" id="email" name="email" placeholder="jan.novak@email.cz"><br><br>
+
+				<label for="phone">Telefon:</label><br>
+				<input type="tel" id="phone" name="phone" placeholder="+420 777 123 456"><br><br>
+
+				<label for="message">Vaše zpráva:</label><br>
+				<textarea id="message" name="message" required rows="4" cols="50" placeholder="Zadejte vaši zprávu..."></textarea>
+				<br><br>
+
+				<input id="sendBtn" type="submit" value="Odeslat">
+			</form>
+
         </section>
     </main>
     <script>
