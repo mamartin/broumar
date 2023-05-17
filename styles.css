@@ -31,7 +31,7 @@ h2 {
 #main {
     display: flex;
     flex-direction: column;
-    margin-bottom: 250px;
+    margin-bottom: 30px;
 }
 
 .logo {
@@ -129,7 +129,7 @@ main {
 }
 
 #textContent {
-    width: 80%;
+    /* width: 80%; */
     margin-top: 50px;
 }
 
@@ -150,8 +150,8 @@ main {
 }
 
 .sluzby-item > img {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
 }
 
 #sendBtn {
@@ -164,4 +164,8 @@ main {
     border-width: 1px;
     border-style: solid;
     border-radius: 40px;
+}
+
+footer {
+    padding-top: 230px;
 }
