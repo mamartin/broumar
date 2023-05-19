@@ -3,6 +3,14 @@ html {
     scroll-padding-top: 30px;
 }
 
+* {
+    font-family: 'Wix Madefor Display', sans-serif;
+}
+
+p {
+    font-size: 18px;
+}
+
 a:link {
     text-decoration: none;
     color: #2b4aec;
@@ -25,7 +33,10 @@ header {
 }
 
 h2 {
+    text-align: center;
     color: #1b00de;
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
 
 #main {
@@ -113,18 +124,24 @@ main {
 }
 
 .hex {
-    font-size: 340px;
-    color: #037035;
+    font-size: 300px;
+    color: #0f8646;
     display: flex;
     justify-content: center;
     align-items: center;
     line-height: 250px;
+    transition: transform .3s;
+}
+
+.hex:hover {
+    transform: scale(1.1)
 }
 
 .hexText {
     color: white;
-    font-size: 30px;
+    font-size: 27px;
     position: absolute;
+    margin-top: 50px;
     /* height: inherit; */
 }
 
@@ -138,6 +155,10 @@ main {
 }
 
 .sluzby {
+    background-color: #00acfe21;
+    border-radius: 15px;
+    padding-top: 20px;
+    margin-bottom: 40px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -164,8 +185,16 @@ main {
     border-width: 1px;
     border-style: solid;
     border-radius: 40px;
+    cursor: pointer;
+    transition: transform .3s;
+}
+
+#sendBtn:hover {
+    transform: scale(1.1)
 }
 
 footer {
-    padding-top: 230px;
+    margin-top: 230px;
+    padding: 5px;
+    background-color: #00acfe21;
 }

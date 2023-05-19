@@ -3,6 +3,11 @@
 <head>
 	<title>Broumar - Logistika</title>
 	<link rel="stylesheet" href="styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body style="font-family: Arial, sans-serif">
 	<header>
@@ -96,15 +101,17 @@
 				</div>
 			</div>
 
-			<p>Zabezpečujeme všechny typy logistických služeb. Export a import zboží s využitím námořní, letecké, silniční a železniční přepravy.</p>
+			<ul>
+				<li><p>Zabezpečujeme všechny typy logistických služeb. Export a import zboží s využitím námořní, letecké, silniční a železniční přepravy.</p></li>
 
-			<p>Dle typu Vaší zásilky určíme, zda je pro Vás cenově nebo rychlostně efektivnější kontejnerová přeprava (FCL), či zda-li se jedná o kusovou přepravu (LCL).</p>
+				<li><p>Dle typu Vaší zásilky určíme, zda je pro Vás cenově nebo rychlostně efektivnější kontejnerová přeprava (FCL), či zda-li se jedná o kusovou přepravu (LCL).</p></li>
 
-			<p>Zajištujeme také přepravu pro zásilky, které podléhají teplotnímu režimu.</p>
+				<li><p>Zajištujeme také přepravu pro zásilky, které podléhají teplotnímu režimu.</p></li>
 
-			<p>Naše nabídka služeb obsahuje ALL RISK pojištění, které kryje škody nad rámec rejdaře.</p>
+				<li><p>Naše nabídka služeb obsahuje ALL RISK pojištění, které kryje škody nad rámec rejdaře.</p></li>
 
-			<p>Přepravu Vašeho zboží připravíme přímo Vám na míru, optimální cestou, za optimální cenu a zajistíme také spediční služby všeho druhu.</p>
+				<li><p>Přepravu Vašeho zboží připravíme přímo Vám na míru, optimální cestou, za optimální cenu a zajistíme také spediční služby všeho druhu.</p></li>
+			</ul>
         
             <h2 id="kontakt">Kontakt</h2>
             <p>
@@ -123,22 +130,24 @@
 			</p>
         
             <h2 id="poptavka">Poptávka</h2>
-            <form>
-				<label for="fname">Jméno:</label><br>
-				<input type="text" id="fname" name="fname" placeholder="Jan Novák"><br><br>
+			<div id="formWrapper">
+				<form>
+					<label for="fname">Jméno:</label><br>
+					<input type="text" id="fname" name="fname" placeholder="Jan Novák"><br><br>
 
-				<label for="email">E-mail:</label><br>
-				<input type="email" id="email" name="email" placeholder="jan.novak@email.cz"><br><br>
+					<label for="email">E-mail:</label><br>
+					<input type="email" id="email" name="email" placeholder="jan.novak@email.cz"><br><br>
 
-				<label for="phone">Telefon:</label><br>
-				<input type="tel" id="phone" name="phone" placeholder="+420 777 123 456"><br><br>
+					<label for="phone">Telefon:</label><br>
+					<input type="tel" id="phone" name="phone" placeholder="+420 777 123 456"><br><br>
 
-				<label for="message">Vaše zpráva:</label><br>
-				<textarea id="message" name="message" required rows="4" cols="50" placeholder="Zadejte vaši zprávu..."></textarea>
-				<br><br>
+					<label for="message">Vaše zpráva:</label><br>
+					<textarea id="message" name="message" required rows="4" cols="50" placeholder="Zadejte vaši zprávu..."></textarea>
+					<br><br>
 
-				<input id="sendBtn" type="submit" value="Odeslat">
-			</form>
+					<input id="sendBtn" type="submit" value="Odeslat">
+				</form>
+			</div>
 			<footer>
 				<a href="https://www.flaticon.com/free-icons/transport" title="transport icons">Transport icons created by Ctrlastudio - Flaticon</a>
 				<a href="https://www.flaticon.com/free-icons/plane" title="plane icons">Plane icons created by Freepik - Flaticon</a>
