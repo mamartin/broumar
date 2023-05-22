@@ -39,6 +39,10 @@ h2 {
     margin-bottom: 60px;
 }
 
+input, textarea {
+    margin-top: 5px;
+}
+
 #main {
     display: flex;
     flex-direction: column;
@@ -75,6 +79,7 @@ main {
     position: absolute;
     width: 80%;
     background-size: cover;
+    background-position: center;
     height: 400px;
     -webkit-transition: opacity 1s ease-in-out;
     -moz-transition: opacity 1s ease-in-out;
@@ -112,9 +117,9 @@ main {
     background-image: url("images/4.jpg");
 }
 
-/* #photo5 {
+#photo5 {
     background-image: url("images/5.jpg");
-} */
+}
 
 #hexa {
     margin-top: 20px;
