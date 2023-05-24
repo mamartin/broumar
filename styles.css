@@ -29,7 +29,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 10px;
+    padding-top: 10px;
 }
 
 h2 {
@@ -51,7 +51,7 @@ input, textarea {
 
 .logo {
     margin-bottom: 20px;
-    height: 150px
+    height: 110px
 }
 
 main {
@@ -62,7 +62,7 @@ main {
 
 #slides {
     /* border: 1px solid black; */
-    height: 400px;
+    height: 440px;
     /* width: 80%; */
     /* margin: 0 auto; */
 }
@@ -70,7 +70,7 @@ main {
 .overlay {
     position: absolute;
     width: 80%;
-    height: 400px;
+    height: 440px;
     background-color: black;
     opacity: 0.2;
 }
@@ -80,7 +80,7 @@ main {
     width: 80%;
     background-size: cover;
     background-position: center;
-    height: 400px;
+    height: 440px;
     -webkit-transition: opacity 1s ease-in-out;
     -moz-transition: opacity 1s ease-in-out;
     -o-transition: opacity 1s ease-in-out;
@@ -89,7 +89,7 @@ main {
 
 .mySlides h2 {
     position: relative;
-    margin-top: 160px;
+    margin-top: 180px;
     color: white;
     font-size: 70px;
     text-align: center;
