@@ -53,27 +53,31 @@ input, textarea {
     padding-bottom: 10px;
 }
 
-#menu > a {
+#menu>a {
     transition: transform .3s;
+    background-color: #4b4e4c;
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
 }
 
-#menu > a:hover {
+#menu>a:hover {
     transform: scale(1.1);
+    background-color: #5b7a65;
 }
 
 .menuItem {
     color: white;
     font-size: 23px;
     font-weight: bold;
-    background-color: #4b4e4c;
     padding: 8px;
-    margin-left: 15px;
-    transition: all .3s;
+    /* transition: all .3s; */
 }
 
 .menuItem:hover {
-    transform: scale(1.1);
-    background-color: #5b7a65;
+    /* transform: scale(1.1); */
+    
 }
 
 #main {
