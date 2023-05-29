@@ -26,6 +26,8 @@ a:hover {
 a:active { text-decoration: none; }
 
 header {
+    width: 80%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -41,6 +43,37 @@ h2 {
 
 input, textarea {
     margin-top: 5px;
+}
+
+#menu {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+#menu > a {
+    transition: transform .3s;
+}
+
+#menu > a:hover {
+    transform: scale(1.1);
+}
+
+.menuItem {
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+    background-color: #4b4e4c;
+    padding: 8px;
+    margin-left: 15px;
+    transition: all .3s;
+}
+
+.menuItem:hover {
+    transform: scale(1.1);
+    background-color: #5b7a65;
 }
 
 #main {
@@ -119,35 +152,6 @@ main {
 
 #photo5 {
     background-image: url("images/5.jpg");
-}
-
-#hexa {
-    margin-top: 20px;
-    /* border: 1px solid black; */
-    display: flex;
-    justify-content: space-around;
-}
-
-.hex {
-    font-size: 300px;
-    color: #0f8646;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    line-height: 250px;
-    transition: transform .3s;
-}
-
-.hex:hover {
-    transform: scale(1.1)
-}
-
-.hexText {
-    color: white;
-    font-size: 27px;
-    position: absolute;
-    margin-top: 50px;
-    /* height: inherit; */
 }
 
 #textContent {
