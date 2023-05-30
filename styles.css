@@ -3,6 +3,10 @@ html {
     scroll-padding-top: 30px;
 }
 
+body {
+    margin: 0;
+}
+
 * {
     font-family: 'Wix Madefor Display', sans-serif;
 }
@@ -29,14 +33,19 @@ header {
     width: 80%;
     margin: 0 auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding-top: 10px;
 }
 
+header>img {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
 h2 {
     text-align: center;
-    color: #1b00de;
+    color: #3f7286;
     margin-top: 60px;
     margin-bottom: 60px;
 }
@@ -46,7 +55,8 @@ input, textarea {
 }
 
 #menu {
-    width: 90%;
+    /* width: 90%; */
+    background-color: #3e7286;
     display: flex;
     justify-content: center;
     padding-top: 5px;
@@ -55,8 +65,7 @@ input, textarea {
 
 #menu>a {
     transition: transform .3s;
-    background-color: #4b4e4c;
-    margin: 10px;
+    margin: 10px 20px;
     padding: 5px;
     display: flex;
     align-items: center;
@@ -64,14 +73,31 @@ input, textarea {
 
 #menu>a:hover {
     transform: scale(1.1);
-    background-color: #5b7a65;
+}
+
+#menu>a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+#menu>a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .menuItem {
     color: white;
     font-size: 23px;
     font-weight: bold;
-    padding: 8px;
+    /* padding: 8px; */
     /* transition: all .3s; */
 }
 
@@ -187,6 +213,40 @@ main {
     width: 80px;
     height: 80px;
 }
+
+ul {
+    line-height: 1.5em;
+    margin: 5px 0 15px;
+    padding: 0;
+  }
+  
+  li {
+    list-style: none;
+    position: relative;
+    padding: 0 0 0 20px;
+  }
+
+li.heart::before, li.heart::after {
+    content: ""; 
+    position: absolute; 
+    left: 7px; 
+    top: 5px; 
+    width: 7px; 
+    height: 12px; 
+    background: #3e7286;
+    border-radius: 50px 50px 0 0; 
+    transform: rotate(-45deg); 
+    transform-origin: 0 100%;
+  }
+  
+  li.heart::after {
+    content: ""; 
+    position: absolute; 
+    top: 5px; 
+    left: 0; 
+    transform: rotate(45deg); 
+    transform-origin: 100% 100%;
+  }
 
 #sendBtn {
     height: 50px;
