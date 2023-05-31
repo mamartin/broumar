@@ -203,7 +203,14 @@ main {
     align-items: center;
     text-align: center;
     box-shadow: rgba(63, 114, 134, 0.4) 5px 5px, rgba(63, 114, 134, 0.3) 10px 10px, rgba(63, 114, 134, 0.2) 15px 15px, rgba(63, 114, 134, 0.1) 20px 20px, rgba(63, 114, 134, 0.05) 25px 25px;
+    border: 1px solid rgba(63, 114, 134, 0.4);
+    justify-content: flex-end;
+    transition: transform .3s;
+}
 
+.sluzby-item:hover {
+    background-color: rgba(63, 114, 134, 0.2);
+    transform: scale(1.07);
 }
 
 .sluzby-item > div:first-of-type {
@@ -235,6 +242,7 @@ main {
 
 .sluzby-item > p {
     margin: 15px;
+    margin-bottom: 10px;
 }
 
 .sluzby-item:first-of-type > img {
