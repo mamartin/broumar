@@ -15,17 +15,9 @@ p {
     font-size: 18px;
 }
 
-a:link {
+a {
     text-decoration: none;
     color: #2b4aec;
-}
-a:visited {
-    text-decoration: none;
-    color: #2b4aec;
-}
-a:hover {
-    text-decoration: none;
-    color: #0f2ab7;
 }
 a:active { text-decoration: none; }
 
@@ -35,7 +27,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 10px;
+    padding-top: 20px;
 }
 
 header>img {
@@ -194,10 +186,10 @@ main {
 }
 
 .sluzby {
-    background-color: #00acfe21;
+    /* background-color: #00acfe21; */
     border-radius: 15px;
     padding-top: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -205,14 +197,54 @@ main {
 
 .sluzby-item {
     display: flex;
+    width: 160px;
+    height: 160px;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    box-shadow: rgba(63, 114, 134, 0.4) 5px 5px, rgba(63, 114, 134, 0.3) 10px 10px, rgba(63, 114, 134, 0.2) 15px 15px, rgba(63, 114, 134, 0.1) 20px 20px, rgba(63, 114, 134, 0.05) 25px 25px;
+
 }
 
-.sluzby-item > img {
+.sluzby-item > div:first-of-type {
     width: 80px;
     height: 80px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
+
+#truck {
+    background-image: url("images/cargo-truck.png");
+}
+
+#train {
+    background-image: url("images/train.png");
+}
+
+#boat {
+    background-image: url("images/boat.png");
+}
+
+
+#plane {
+    background-image: url("images/plane.png");
+    background-size: 90%;
+}
+
+
+.sluzby-item > p {
+    margin: 15px;
+}
+
+.sluzby-item:first-of-type > img {
+    position: relative;
+    top: 8px;
+}
+
+/* .sluzby-item:first-of-type > p {
+    margin: 15px 15px;
+} */
 
 ul {
     line-height: 1.5em;
@@ -254,7 +286,7 @@ li.heart::before, li.heart::after {
     padding-right: 20px;
     font-size: 18px;
     color: white;
-    background-color: #037035;
+    background-color: #3e7286;
     border-width: 1px;
     border-style: solid;
     border-radius: 40px;
@@ -269,5 +301,9 @@ li.heart::before, li.heart::after {
 footer {
     margin-top: 230px;
     padding: 5px;
-    background-color: #00acfe21;
+    background-color: #3e7286;
+}
+
+footer a {
+    color: white;
 }
