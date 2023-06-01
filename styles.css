@@ -308,8 +308,9 @@ li.heart::before, li.heart::after {
 
 footer {
     margin-top: 230px;
-    padding: 5px;
+    padding: 25px;
     background-color: #3e7286;
+    text-align: center;
 }
 
 footer a {
