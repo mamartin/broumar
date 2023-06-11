@@ -49,22 +49,114 @@
         <section id="textContent">
 			<h2 id="sluzby">Naše služby</h2>
             <div class="sluzby">
-				<div class="sluzby-item">
+				<div class="sluzby-item" onclick="showSluzby(0)">
 					<div id="truck"></div>
 					<p>Silniční přeprava</p>
 				</div>
-				<div class="sluzby-item">
+				<div class="sluzby-item" onclick="showSluzby(1)">
 					<div id="train"></div>
 					<p>Železniční přeprava</p>
 				</div>
-				<div class="sluzby-item">
+				<div class="sluzby-item" onclick="showSluzby(2)">
 					<div id="boat"></div>
 					<p>Námořní přeprava</p>
 				</div>
-				<div class="sluzby-item">
+				<div class="sluzby-item" onclick="showSluzby(3)">
 					<div id="plane"></div>
 					<p>Letecká přeprava</p>
 				</div>
+				<div class="sluzby-item" onclick="showSluzby(4)">
+					<div id="plane"></div>
+					<p>Celní služby</p>
+				</div>
+			</div>
+
+			<div class="sluzby-text-container">
+				<h3>Silniční přeprava</h3>
+				 sběrné zásilky (LTL = Less than Truck Load)
+				 celovozové zásilky (FTL = Full Truck Load)
+				 nebezpečné zboží
+				 zboží vyžadující regulovanou teplotu s využitím chladících nebo termo vozů
+				(FRIGO)
+				 nadrozměrné náklady
+				 Přepravíme Vaše nadrozměrné zásilky
+				
+				Kromě samotného transportu zařídíme potřebná povolení, celní řízení a all risk pojištění (v
+				případě, že bude vyžadováno).
+			</div>
+
+			<div class="sluzby-text-container">
+				<h3>Železniční přeprava</h3>
+				 kusové zásilky (LCL = Less than Container Load)
+				 celokontejnerové náklady (FCL = Full Container Load) – import/export z/do
+				evropských přístavů
+				 nebezpečné zboží
+				 Přepravíme Vaše nadrozměrné zásilky
+
+				Železniční přepravu kontejnerů můžeme kombinovat se silniční dopravou. Doručíme kamkoliv
+				bude náš zákazník potřebovat.
+				Kromě samotného transportu zařídíme potřebná povolení, celní řízení a all risk pojištění (v
+				případě, že bude vyžadováno).
+			</div>
+
+			<div class="sluzby-text-container">
+				<h3>Námořní přeprava</h3>
+				 jednotlivé kusy zboží (LCL = Less than Container Load) 
+				 celokontejnery (FCL = Full Container Load) 
+				 přepravy v teplotním režimu (reefer kontejnery)
+				 nadrozměrné náklady
+				 nebezpečné zboží
+				 nápoje pomocí flexitanku (možnost nakládky až 24 000 litrů) 
+				 doprava zboží loděmi typu Ro/Ro
+				 Break Bulk (konvenční lodění)
+				 Přepravíme Vaše nadrozměrné zásilky
+
+				Pokud je nutné zásilku přepravit na velké vzdálenosti, bývá námořní přeprava nejlevnější
+				variantou. Nicméně se vyplatí i na kratší trasy například do Velké Británie, Irska, Španělska nebo
+				všech zemí Skandinávie takzvaná shortsea.
+				V Česku využíváme 8 překládkových terminálů a 3 terminály pro sběrné zásilky. Ty se nacházejí v
+				Praze, Brně a Ostravě. K dopravě zboží do evropských přístavů fungují pravidelné spoje vlak
+				v kombinaci s lodí nebo kamion v kombinaci s lodí. 
+				Zajišťujeme dopravu nákladu port/door, door/port a door to door. Používáme k tomu
+				námořního společně s železničním nebo silničním uzlem. Kromě samotného transportu se
+				postaráme také o potřebná povolení, celní řízení a na základě případného požadavku, zásilky
+				připojistíme nad rámec povinností krytí ze strany rejdaře.
+			</div>
+
+			<div class="sluzby-text-container">
+				<h3>Letecká přeprava</h3>
+				 exportní a importní přepravy po celém světě
+				 přeprava standardních zásilek
+				 přepravy v teplotním režimu
+				 nadrozměrné náklady
+				 cenné, nebezpečné, choulostivé zásilky (licenční zboží)
+				 charterové lety
+				 komplexní přeprava leteckých zásilek door to door
+				 Přepravíme Vaše nadrozměrné zásilky
+
+				Letecká doprava je nejlepším řešením, pokud potřebujete zásilku přepravit co nejrychleji. K
+				přepravě využíváme charterové i pravidelné spoje s odlety i několikrát týdně. Kromě samotného
+				transportu, zařídíme potřebná povolení, celní řízení a all risk pojištění (v případě, že bude
+				vyžadováno).
+			</div>
+
+			<div class="sluzby-text-container">
+				<h3>Celní služby</h3>
+				 vyclíváme na největších kontejnerových terminálech v ČR a dalších místech v ČR
+				 umíme veškeré celní režimy
+				 celní odbavování osobních věcí při stěhování osob z a mimo EU
+				 vystavování a ukončování T2L, T2LF
+				 vystavení tranzitních dokladů
+				 neutralizace dokladů
+				 zajištění a ručení za celní dluh
+				 zprostředkování platby cla za zákazníka
+				 využití zjednodušených postupů v celním řízení (volný oběh, schválený
+				příjemce/odesilatel/vývozce, centralizované celní řízení)
+				 závazné informace o sazebním zařazení zboží do společného celního sazebníku EU
+				(TARIC)
+				 získání registračního a identifikačního čísla hospodářského subjektu (číslo EORI)
+				 ATA karnet
+				 poradenství v oblasti celní problematiky
 			</div>
 
 			<ul>
@@ -149,6 +241,17 @@
     <script>
 		let slideIndex = 0;
 		showSlides();
+
+		function showSluzby(index) {
+			let sluzby = document.getElementsByClassName("sluzby-text-container");
+
+			for (i = 0; i < sluzby.length; i++) {
+				sluzby[i].style.display = 'none';
+			}
+
+			sluzby[index].style.display = 'block';
+
+		}
 
 		function showSlides() {
 			let i;

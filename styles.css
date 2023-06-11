@@ -211,6 +211,7 @@ main {
 .sluzby-item:hover {
     background-color: rgba(63, 114, 134, 0.2);
     transform: scale(1.07);
+    cursor: pointer;
 }
 
 .sluzby-item > div:first-of-type {
@@ -253,6 +254,10 @@ main {
 /* .sluzby-item:first-of-type > p {
     margin: 15px 15px;
 } */
+
+.sluzby-text-container {
+    display: none;
+}
 
 ul {
     line-height: 1.5em;
