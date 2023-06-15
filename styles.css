@@ -209,9 +209,12 @@ main {
 }
 
 .sluzby-item:hover {
-    background-color: rgba(63, 114, 134, 0.2);
     transform: scale(1.07);
     cursor: pointer;
+}
+
+.sluzby-item.active {
+    background-color: rgba(63, 114, 134, 0.2);
 }
 
 .sluzby-item > div:first-of-type {
@@ -234,7 +237,6 @@ main {
     background-image: url("images/boat.png");
 }
 
-
 #plane {
     background-image: url("images/plane.png");
     background-size: 90%;
@@ -243,7 +245,6 @@ main {
 #custom-clearance {
     background-image: url("images/officer.png");
 }
-
 
 .sluzby-item > p {
     margin: 15px;
@@ -255,11 +256,7 @@ main {
     top: 8px;
 }
 
-/* .sluzby-item:first-of-type > p {
-    margin: 15px 15px;
-} */
-
-.sluzby-text-container {
+.sluzby-text-container ~ .sluzby-text-container {
     display: none;
 }
 
@@ -290,16 +287,16 @@ li.heart::before, li.heart::after {
     border-radius: 50px 50px 0 0; 
     transform: rotate(-45deg); 
     transform-origin: 0 100%;
-  }
+}
   
-  li.heart::after {
+li.heart::after {
     content: ""; 
     position: absolute; 
     top: 5px; 
     left: 0; 
     transform: rotate(45deg); 
     transform-origin: 100% 100%;
-  }
+}
 
 #sendBtn {
     height: 50px;

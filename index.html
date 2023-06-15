@@ -49,7 +49,7 @@
         <section id="textContent">
 			<h2 id="sluzby">Naše služby</h2>
             <div class="sluzby">
-				<div class="sluzby-item" onclick="showSluzby(0)">
+				<div class="sluzby-item active" onclick="showSluzby(0)">
 					<div id="truck"></div>
 					<p>Silniční přeprava</p>
 				</div>
@@ -257,14 +257,16 @@
 		showSlides();
 
 		function showSluzby(index) {
+			let sluzbyItems = document.getElementsByClassName("sluzby-item");
 			let sluzby = document.getElementsByClassName("sluzby-text-container");
 
 			for (i = 0; i < sluzby.length; i++) {
 				sluzby[i].style.display = 'none';
+				sluzbyItems[i].classList.remove('active');
 			}
 
 			sluzby[index].style.display = 'block';
-
+			sluzbyItems[index].classList.add('active');
 		}
 
 		function showSlides() {
