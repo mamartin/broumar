@@ -256,7 +256,7 @@ main {
     top: 8px;
 }
 
-.sluzby-text-container ~ .sluzby-text-container {
+.sluzby-text-container {
     display: none;
 }
 
