@@ -39,7 +39,7 @@ h2 {
     text-align: center;
     color: #3f7286;
     margin-top: 60px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 input, textarea {
@@ -214,6 +214,8 @@ main {
     background-size: contain;
     background-repeat: no-repeat;
     background-position-y: 20px;
+    transition: background-color 0.1s linear;
+    transition: transform 0.3s linear;
 }
 
 .sluzby-item:hover {
@@ -271,8 +273,10 @@ main {
 .sluzby-item > p {
     position: relative;
     top: 70px;
-    /* margin: 15px;
-    margin-bottom: 10px; */
+}
+
+.sluzby-item.active > p {
+    font-weight: 900;
 }
 
 .sluzby-item:first-of-type > img {
