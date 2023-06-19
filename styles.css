@@ -95,7 +95,6 @@ input, textarea {
 
 .menuItem:hover {
     /* transform: scale(1.1); */
-    
 }
 
 #main {
@@ -297,13 +296,22 @@ ul {
     line-height: 1.5em;
     margin: 5px 0 15px;
     padding: 0;
-  }
+}
+
+.sluzby-text-container > ul {
+    padding-left: 40px;
+}
+
+.sluzby-text-container > ul > li {
+    padding: 0;
+    list-style: disc;
+}
   
-  li {
+li {
     list-style: none;
     position: relative;
     padding: 0 0 0 20px;
-  }
+}
 
 li.heart::before, li.heart::after {
     content: ""; 
@@ -325,6 +333,10 @@ li.heart::after {
     left: 0; 
     transform: rotate(45deg); 
     transform-origin: 100% 100%;
+}
+
+.phone-email {
+    display: flex;
 }
 
 #sendBtn {
