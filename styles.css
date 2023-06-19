@@ -213,8 +213,7 @@ main {
     background-size: contain;
     background-repeat: no-repeat;
     background-position-y: 20px;
-    transition: background-color 0.1s linear;
-    transition: transform 0.3s linear;
+    transition: transform 0.15s linear, background-color 0.2s linear;
 }
 
 .sluzby-item:hover {
