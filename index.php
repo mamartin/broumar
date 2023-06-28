@@ -1,24 +1,3 @@
-<?php 
-
-if(isset($_POST['submit'])){
-    $to = "info@broumar.eu";
-    $from = isSet($_POST['email']) ? isSet($_POST['email']) : 'info@broumar.eu';
-    $name = $_POST['name'];
-    $subject = "Broumar: novy vzkaz";
-    $subject2 = "Broumar: Kopie Vaší zprávy";
-    $message = $name . " zanechal následující zprávu:" . "\n\n" . $_POST['message'] . "\n\n" . $_POST['email'] . "\n\n" . $_POST['phone'];
-    $message2 = "Zde je kopie Vaší zprávy " . $name . "\n\n" . $_POST['message'];
-
-    $headers = "From:" . $from;
-    $headers2 = "From:" . $to;
-
-	mail ($to, $subject, $message);
-
-    echo "Zpráva byla odeslána. Děkujeme, " . $name . ", brzy se Vám ozveme.";
-}
-?>
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -282,6 +261,13 @@ if(isset($_POST['submit'])){
 		<a href="https://www.flaticon.com/free-icons/train" title="train icons">Train icons created by Pixel perfect - Flaticon</a>
 		<a href="https://www.flaticon.com/free-icons/customs" title="customs icons">Customs icons created by Smashicons - Flaticon</a>
 	</footer>
+
+	<div id="confirmationModal">
+		<h2>Vaše zpráva byla odeslána. Děkujeme.</h2>
+
+		<button onclick="showModal(false)">Zavřít</button>
+	</div>
+
     <script>
 		let slideIndex = 0;
 		showSlides();
@@ -317,5 +303,35 @@ if(isset($_POST['submit'])){
 			slides[slideIndex-1].style.opacity = 1;
 			setTimeout(showSlides, 5000);
 		}
+
+		function showModal(show) {
+			let modal = document.getElementById('confirmationModal');
+			modal.style.display = show ? 'flex' : 'none'
+		}
 	</script>
 </body>
+
+<?php 
+
+if(isset($_POST['submit'])){
+    $to = "info@broumar.eu";
+	// $to = "martin.doubek@nangu.tv";
+    $from = isSet($_POST['email']) ? isSet($_POST['email']) : 'info@broumar.eu';
+    $name = $_POST['name'];
+    $subject = "Broumar: nový vzkaz";
+    $subject2 = "Broumar: Kopie Vaší zprávy";
+    $message = $name . " zanechal následující zprávu:" . "\n\n" . $_POST['message'] . "\n\n" . $_POST['email'] . "\n\n" . $_POST['phone'];
+    $message2 = "Zde je kopie Vaší zprávy " . $name . "\n\n" . $_POST['message'];
+
+	$headerFields = array(
+		"MIME-Version: 1.0",
+		"Content-Type: text/html;charset=utf-8"
+	);
+
+	if (mail ($to, $subject, $message, implode("\r\n", $headerFields))) {
+		echo "<script type=\"text/javascript\">";
+		echo "showModal(true)";
+		echo "</script>";
+	}
+}
+?>
