@@ -1,3 +1,24 @@
+<?php 
+
+if(isset($_POST['submit'])){
+    $to = "info@broumar.eu";
+    $from = isSet($_POST['email']) ? isSet($_POST['email']) : 'info@broumar.eu';
+    $name = $_POST['name'];
+    $subject = "Broumar: novy vzkaz";
+    $subject2 = "Broumar: Kopie Vaší zprávy";
+    $message = $name . " zanechal následující zprávu:" . "\n\n" . $_POST['message'] . "\n\n" . $_POST['email'] . "\n\n" . $_POST['phone'];
+    $message2 = "Zde je kopie Vaší zprávy " . $name . "\n\n" . $_POST['message'];
+
+    $headers = "From:" . $from;
+    $headers2 = "From:" . $to;
+
+	mail ($to, $subject, $message);
+
+    echo "Zpráva byla odeslána. Děkujeme, " . $name . ", brzy se Vám ozveme.";
+}
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -235,9 +256,9 @@
         
             <h2 id="poptavka">Poptávka</h2>
 			<div id="formWrapper">
-				<form>
-					<label for="fname">Jméno:</label><br>
-					<input type="text" id="fname" name="fname" placeholder="Jan Novák"><br><br>
+				<form method="post">
+					<label for="name">Jméno:</label><br>
+					<input type="text" id="name" name="name" placeholder="Jan Novák"><br><br>
 
 					<label for="email">E-mail:</label><br>
 					<input type="email" id="email" name="email" placeholder="jan.novak@email.cz"><br><br>
@@ -249,7 +270,7 @@
 					<textarea id="message" name="message" required rows="4" cols="50" placeholder="Zadejte vaši zprávu..."></textarea>
 					<br><br>
 
-					<input id="sendBtn" type="submit" value="Odeslat">
+					<input id="sendBtn" type="submit" name="submit" value="Odeslat">
 				</form>
 			</div>
         </section>
