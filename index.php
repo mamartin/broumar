@@ -210,9 +210,9 @@
             <h2 id="kontakt">Kontakt</h2>
             <p>
 				<b>Broumar s.r.o.</b></br>
-				Nademlejnská 600/1<br>
+				Lublaňská 667/42<br>
 				
-				19800 Praha 9</br>
+				120 00 Praha 2</br>
 				Czech republic</br></br>
 				
 				<b>Jiří Klíčman</b></br>
